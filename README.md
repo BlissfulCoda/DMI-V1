@@ -38,12 +38,6 @@ Full design work can be found on behance.
 <!-- ### Current Pages -->
 
 <!-- Student page
-![studentForum](./README-Assets/studentForum.svg)
-
-<br>
-
-Web Lesson
-![webLesson](./README-Assets/webLesson.svg) -->
 
 <!-- Clone the repo and make sure you have the following installed on your machine:
 
@@ -54,3 +48,8 @@ Web Lesson
   Docker
 
 ``` -->
+Student Page
+![studentForum](./README-Assets/studentForum.png)
+
+Web Lesson
+![webLesson](./README-Assets/WebLesson.png)
