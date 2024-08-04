@@ -49,7 +49,7 @@ Full design work can be found on behance.
 
 ``` -->
 Student Page
-![studentForum](./README-Assets/studentForum.png)
+![studentForum](./README-Assets/StudentForum.png)
 
 Web Lesson
 ![webLesson](./README-Assets/WebLesson.png)
