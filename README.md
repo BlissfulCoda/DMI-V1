@@ -1,6 +1,6 @@
 # DMI 📝
 
-[![Github Finder Gif](/README-Assets/studentdashboard.svg)][romie]
+[![studentDashboard](./README-Assets/studentDashboard.svg)][romie]
 
 <br>
 
@@ -64,14 +64,12 @@ Full design work can be found on behance.
 ### Current Pages
 
 Student page
-[![Github Finder Gif](./README-Assets/studentForum.svg)][romie]
+[![studentForum](./README-Assets/studentForum.svg)][romie]
 
 <br>
 
 Web Lesson
-[![Github Finder Gif](./README-Assets/webLesson.svg)][romie]
-
-[![Github Finder Gif](./README-Assets/studentForum.svg)][romie]
+[![webLesson](./README-Assets/webLesson.svg)][romie]
 
 <!-- Clone the repo and make sure you have the following installed on your machine:
 
