@@ -1,6 +1,6 @@
 # DMI 📝
 
-<!-- ![studentDashboard](./README-Assets/studentDashboard.svg) -->
+ ![studentDashboard](./README-Assets/StudentDashboard.png)
 
 <br>
 
@@ -46,6 +46,7 @@ Web Lesson
 ![webLesson](./README-Assets/webLesson.svg) -->
 
 <!-- Clone the repo and make sure you have the following installed on your machine:
+
 
 ```
   Node.js
