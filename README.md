@@ -1,6 +1,6 @@
 # DMI 📝
 
-![studentDashboard](./README-Assets/studentDashboard.svg)
+<!-- ![studentDashboard](./README-Assets/studentDashboard.svg) -->
 
 <br>
 
@@ -9,7 +9,6 @@
 - [DMI 📝](#dmi-)
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
-    - [Current Pages](#current-pages)
 
 ## Overview
 
@@ -36,15 +35,15 @@ Full design work can be found on behance.
 
 <!-- ## Technologies Used -->
 
-### Current Pages
+<!-- ### Current Pages -->
 
-Student page
+<!-- Student page
 ![studentForum](./README-Assets/studentForum.svg)
 
 <br>
 
 Web Lesson
-![webLesson](./README-Assets/webLesson.svg)
+![webLesson](./README-Assets/webLesson.svg) -->
 
 <!-- Clone the repo and make sure you have the following installed on your machine:
 
