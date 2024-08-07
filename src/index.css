@@ -8,12 +8,7 @@
   box-sizing: border-box;
 }
 
-
 @layer base {
-  h1 {
-    @apply text-4xl font-semibold;
-  }
-
   p {
     @apply text-base;
   }
@@ -25,4 +20,8 @@
 
 .transition-class {
   @apply ease-out duration-200;
+}
+
+.button-gradient {
+  @apply bg-gradient-to-tl from-black  via-slate-600  to-black  text-white px-4 py-1 rounded-xl;
 }
