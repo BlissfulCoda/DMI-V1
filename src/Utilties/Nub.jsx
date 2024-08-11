@@ -25,6 +25,7 @@ const Nub = ({ selected }) => {
   };
   return (
     <motion.div
+      ref={nubRef}
       animate={{ left }}
       style={{ clipPath: "polygon(0 0, 100% 0, 50% 50%, 0% 100%)" }}
       className="absolute left-1/2 top-0 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rotate-45 rounded-full border border-neutral-400 "
