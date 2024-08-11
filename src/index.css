@@ -25,3 +25,7 @@
 .button-gradient {
   @apply bg-gradient-to-tl from-black  via-slate-600  to-black  text-white px-4 py-1 rounded-xl;
 }
+
+.border-gradient {
+  @apply border bg-gradient-to-tl from-[#3E7BFA]  to-[#6600CC]  text-white px-4 py-1 rounded-xl;
+}

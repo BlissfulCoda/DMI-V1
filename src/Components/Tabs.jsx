@@ -1,10 +1,12 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
+import { AnimatePresence } from "framer-motion";
 import ExampleComponent from "./ExampleComponent";
+import TabContent from "./TabContent";
 
 const Tabs = ({ activeLink }) => {
-  const [selected, setSelected] = useState(null);
+  const [selected, setSelected] = useState(1);
   const [direction, setDirection] = useState(null);
 
   const handleSetSelected = (val) => {
@@ -47,6 +49,7 @@ const Tabs = ({ activeLink }) => {
           {TABS.map((tab) => {
             return (
               <NavLink
+                id={`shift-tab-${tab.id}`}
                 onMouseEnter={() => handleSetSelected(tab.id)}
                 onClick={() => handleSetSelected(tab.id)}
                 to={tab.path}
@@ -62,7 +65,11 @@ const Tabs = ({ activeLink }) => {
               </NavLink>
             );
           })}
-
+          <AnimatePresence>
+            {selected && (
+              <TabContent direction={direction} selected={selected} />
+            )}
+          </AnimatePresence>
           <NavLink
             to="/blog"
             className={`${activeLink} relative before:absolute before:content-["New"] before:text-blue-600 before:text-xs before:-top-2 before:-right-6 before:px-2 before:py-1 before:rounded-xl before:border-red-500`}

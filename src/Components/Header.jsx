@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
-import logo from "../assets/dmi.svg";
+import logo from "../assets/dmiLinear.svg";
 import Tabs from "./Tabs";
 
 const Header = () => {
@@ -17,7 +17,6 @@ const Header = () => {
     isActive
       ? " text-gray-800 font-medium rounded-md px-3 py-2 font-300 text-sm "
       : "text-black hover:text-red-300 rounded-md px-3 py-2 text-sm";
-
 
   return (
     <motion.header
@@ -38,19 +37,19 @@ const Header = () => {
                 src={logo}
                 alt="Dubai Maths Institute"
               />
-              <span className="font-medium text-lg">Dubai Maths Insitute</span>
+              <span className="font-xs sm:font-medium">Dubai Maths Insitute</span>
             </NavLink>
 
             {/* Center Navigation */}
             <Tabs activeLink={activeLink} />
 
             {/* CTA */}
-            <nav className="md:ml-auto ">
-              <div className="flex space-x-2 divide-x divide-bg-gradient-to-tb from-white via-slate-600 to-white">
+            <nav className=" md:ml-auto ">
+              <div className="flex sm:space-x-2 divide-x divide-bg-gradient-to-tb from-white via-slate-600 to-white">
                 <NavLink to="/request-a-demo" className={activeLink}>
                   Request a demo
                 </NavLink>
-                <div className="flex space-x-2">
+                <div className="flex sm:space-x-2">
                   <NavLink to="/sign-up" className={activeLink}>
                     Sign up
                   </NavLink>
