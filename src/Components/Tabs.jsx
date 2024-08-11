@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
 import { AnimatePresence } from "framer-motion";
-import ExampleComponent from "./ExampleComponent";
+import { TABS } from "../Utilties/Tabs";
 import TabContent from "./TabContent";
 
 const Tabs = ({ activeLink }) => {
@@ -19,18 +19,7 @@ const Tabs = ({ activeLink }) => {
     setSelected(val);
   };
 
-  const TABS = [
-    {
-      title: "Product",
-      component: ExampleComponent,
-      path: "/product",
-    },
-    {
-      title: "Pricing",
-      component: ExampleComponent,
-      path: "/pricing",
-    },
-  ].map((n, idx) => ({ ...n, id: idx + 1 }));
+ 
 
   return (
     <>
@@ -67,7 +56,11 @@ const Tabs = ({ activeLink }) => {
           })}
           <AnimatePresence>
             {selected && (
-              <TabContent direction={direction} selected={selected} />
+              <TabContent
+                direction={direction}
+                selected={selected}
+                TABS={TABS}
+              />
             )}
           </AnimatePresence>
           <NavLink

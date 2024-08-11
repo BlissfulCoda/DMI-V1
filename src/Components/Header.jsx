@@ -37,27 +37,35 @@ const Header = () => {
                 src={logo}
                 alt="Dubai Maths Institute"
               />
-              <span className="font-xs sm:font-medium">Dubai Maths Insitute</span>
+              <span className="font-xs sm:font-medium">
+                Dubai Maths Insitute
+              </span>
             </NavLink>
 
             {/* Center Navigation */}
             <Tabs activeLink={activeLink} />
 
             {/* CTA */}
-            <nav className=" md:ml-auto ">
-              <div className="flex sm:space-x-2 divide-x divide-bg-gradient-to-tb from-white via-slate-600 to-white">
-                <NavLink to="/request-a-demo" className={activeLink}>
+            <nav className="md:ml-auto">
+              <div className="flex sm:space-x-6 divide-x divide-bg-gradient-to-tb from-white via-slate-600 to-white">
+                {/* <NavLink to="/request-a-demo" className={activeLink}>
                   Request a demo
+                </NavLink> */}
+                <NavLink
+                  to="/blog"
+                  className={`${activeLink} relative before:absolute before:content-["New"] before:text-blue-600 before:text-xs before:-top-2 before:-right-4 before:px-2 before:py-1 before:rounded-xl before:border-red-500`}
+                >
+                  Blog
                 </NavLink>
                 <div className="flex sm:space-x-2">
-                  <NavLink to="/sign-up" className={activeLink}>
-                    Sign up
+                  <NavLink to="/resume" className={activeLink}>
+                    Resume
                   </NavLink>
                   <NavLink
-                    to="/login"
+                    to="/contact"
                     className="button-gradient text-xs font-medium grid place-content-center"
                   >
-                    Login
+                    Contact
                   </NavLink>
                 </div>
               </div>
